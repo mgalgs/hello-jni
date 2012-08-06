@@ -20,7 +20,9 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE			:= hello_jni
-LOCAL_SRC_FILES			:= hello_jni.c jni-util.c
+# LOCAL_SRC_FILES			:= hello_jni.c jni-util.c
+LOCAL_SRC_FILES			:= hello_jni.c
+# LOCAL_LDLIBS			:= -L$(SYSROOT)/usr/lib -llog
 # LOCAL_C_INCLUDES
 
 include $(BUILD_SHARED_LIBRARY)
